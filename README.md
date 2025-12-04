@@ -31,14 +31,14 @@ A complete backend, with JWT authentication, using fastify and TypeScript
 
 # How to run the Project
 ### Clone the repositore 
-1 ``
+- `git clone https://github.com/Kaua73-dev/API_SYSTEM_LOGIN.git`
 
 ### Enter in your project 
-2 `cd your-project`
+- `cd your-project`
 
 
-3 `npx prisma migrate dev`
-4 `npm run dev`
+- `npx prisma migrate dev`
+- `npm run dev`
 
 ### Create your .env file
 
@@ -47,12 +47,17 @@ A complete backend, with JWT authentication, using fastify and TypeScript
 
 How to use
 - Access `/public/login.html` in your browser.
-
 - Create a user or log in.
+- If you are an admin, you can view and delete users through the listUser.
 
-- If
 
+## Admin User for Testing
 
+You can use this admin user to test the system:
+
+- Email: `adm@gmail.com`
+- Password: `adm123`
+- checkBox: `true`
 
 
 # ROUTES API
