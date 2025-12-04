@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Dashboard</title>
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white select-none">
+
+
+  <header class="w-full bg-slate-900/60 backdrop-blur-xl border-b border-slate-700 px-8 py-4 shadow-xl flex justify-between items-center fixed top-0 left-0 z-50">
+
+    <h1 class="text-2xl font-bold tracking-wide bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+        Dashboard
+    </h1>
+
+    <div class="flex gap-4">
+        <button 
+            onclick="window.location.href='/public/listUsers.html'"
+            class="px-5 py-2 bg-gradient-to-r from-violet-500 to-purple-600 rounded-lg font-semibold shadow-lg hover:shadow-violet-700/40 hover:scale-105 transition-all"
+        >
+            Ver Todos os Usuários
+        </button>
+
+        <button 
+            onclick="window.location.href='/public/homePage.html'"
+            class="px-5 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg font-semibold shadow-lg hover:shadow-blue-700/40 hover:scale-105 transition-all"
+        >
+            Home Page
+        </button>
+    </div>
+
+</header>
+
+
+  <div class="pt-32 flex justify-center">
+    <div class="container dashboard-container w-full max-w-xl mx-auto bg-slate-900/60 backdrop-blur-xl border border-slate-700 rounded-2xl shadow-2xl p-10">
+
+
+      <h2 class="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-indigo-400 to-cyan-300 text-transparent bg-clip-text drop-shadow">
+        Criar Novo Usuário
+      </h2>
+
+
+      <div class="space-y-5">
+
+        <input 
+          id="emailCreate"
+          placeholder="Email"
+          class="w-full p-3 rounded-xl bg-slate-800/60 border border-slate-700 text-white focus:outline-none focus:ring-2 focus:ring-cyan-400 shadow-inner"
+        >
+
+        <input 
+          id="passwordCreate"
+          placeholder="Password"
+          class="w-full p-3 rounded-xl bg-slate-800/60 border border-slate-700 text-white focus:outline-none focus:ring-2 focus:ring-cyan-400 shadow-inner"
+        >
+      </div>
+
+    
+      <button 
+        onclick="createUser()"
+        class="w-full mt-8 py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-cyan-500 text-white font-bold text-lg shadow-lg hover:scale-105 hover:shadow-emerald-700/40 transition-all"
+      >
+        Criar Usuário
+      </button>
+
+    </div>
+  </div>
+
+  <script src="/public/java.js"></script>
+</body>
+</html>

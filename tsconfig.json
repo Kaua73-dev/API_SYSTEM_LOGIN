@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "strict": true,
+
+    "lib": ["ESNext"],
+    "target": "ESNext",
+
+    "module": "ES2022",
+    "moduleResolution": "node",
+
+    "outDir": "./build",
+    "rootDir": "src",
+
+    "baseUrl": "./src",
+    "paths": {
+      "#server": ["server.ts"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "build", "prisma.config.ts"]
+}

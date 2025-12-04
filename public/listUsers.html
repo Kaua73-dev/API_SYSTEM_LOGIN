@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Usuários</title>
+
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 min-h-screen">
+
+ 
+    <header class="w-full bg-slate-800/70 backdrop-blur-xl border-b border-slate-700 shadow-xl px-6 py-4 flex justify-between items-center fixed top-0 left-0 z-50">
+        <h2 class="text-xl font-bold text-white tracking-wider drop-shadow">Painel de Usuários</h2>
+        
+        <button 
+            onclick="window.location.href='/public/dashboard.html'"
+            class="px-5 py-2 rounded-lg bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-semibold shadow-lg hover:scale-105 transition-all"
+        >
+            Ir para Dashboard
+        </button>
+    </header>
+
+   
+    <div class="pt-28 flex justify-center">
+        <div class="container w-full max-w-2xl mx-auto p-8 bg-slate-900/60 backdrop-blur-xl rounded-2xl shadow-2xl border border-slate-700">
+
+            <h1 class="text-4xl font-bold text-center bg-gradient-to-r from-indigo-400 to-cyan-300 text-transparent bg-clip-text drop-shadow mb-8">
+                Lista de Usuários
+            </h1>
+
+          
+            <div id="list" class="space-y-4 mt-6"></div>
+
+           
+            <button 
+                class="btn-load w-full mt-10 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-emerald-500 text-white font-bold shadow-lg hover:scale-105 hover:shadow-emerald-700/40 transition-all"
+                onclick="loadUsers()"
+            >
+                Carregar Usuários
+            </button>
+
+        </div>
+    </div>
+
+    <script src="/public/java.js"></script>
+</body>
+</html>
