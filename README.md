@@ -30,15 +30,27 @@ A complete backend, with JWT authentication, using fastify and TypeScript
 
 
 # How to run the Project
-In the terminal, run: 
+### Clone the repositore 
+1 ``
 
-- `npx prisma migrate dev`
-- `npm run dev`
+### Enter in your project 
+2 `cd your-project`
+
+
+3 `npx prisma migrate dev`
+4 `npm run dev`
 
 ### Create your .env file
 
 `DATABASE_URL="file:./dev.db"`
 
+
+How to use
+- Access `/public/login.html` in your browser.
+
+- Create a user or log in.
+
+- If
 
 
 
