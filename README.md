@@ -32,8 +32,8 @@ A complete backend, with JWT authentication, using fastify and TypeScript
 # How to run the Project
 In the terminal, run: 
 
-`npx prisma migrate dev`
-`npm run dev`
+- `npx prisma migrate dev`
+- `npm run dev`
 
 ### Create your .env file
 
@@ -48,14 +48,14 @@ All routes:
 
 ### Publics
 
-POST /users 
-GET /users
-POST /users
+- POST /users 
+- GET /users
+- POST /users
 
 ### ADMIN(protected)
 
-GET /users:id
-PUT /users:id
-DELETE /users:id
+- GET /users:id
+- PUT /users:id
+- DELETE /users:id
 
 
